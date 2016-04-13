@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -9,13 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Comp-Dept | Index</title>
+    <title>Round About - Start Bootstrap Template</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link href="css/round-about.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/card.css"></li>
     <link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -34,36 +33,11 @@ $(document).ready(function() {
     });
 });
 </script>
-<script type="text/javascript">
-    $(document).ready( function() {
-        $('#myCarousel').carousel({
-            interval:   4000
-        });
-        
-        var clickEvent = false;
-        $('#myCarousel').on('click', '.nav a', function() {
-                clickEvent = true;
-                $('.nav li').removeClass('active');
-                $(this).parent().addClass('active');        
-        }).on('slid.bs.carousel', function(e) {
-            if(!clickEvent) {
-                var count = $('.nav').children().length -1;
-                var current = $('.nav li.active');
-                current.removeClass('active').next().addClass('active');
-                var id = parseInt(current.data('slide-to'));
-                if(count == id) {
-                    $('.nav li').first().addClass('active');    
-                }
-            }
-            clickEvent = false;
-        });
-    });
-</script>
 <script src="js/bootstrap.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/npm.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <!-- Navigation -->
@@ -83,7 +57,7 @@ $(document).ready(function() {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Staff</a>
+                        <a href="staff.html">Staff</a>
                     </li><li>
                         <a href="#">Placement</a>
                     </li><li>
@@ -110,59 +84,8 @@ $(document).ready(function() {
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
             </div>
         </div>
-
-        <!-- Slider Row -->
-   <div class="row">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
-      
-        <div class="item active">
-          <img src="http://placehold.it/1440x400/cccccc/ffffff">
-           <div class="carousel-caption">
-            <h3>Headline</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-          </div>
-        </div><!-- End Item -->
- 
-         <div class="item">
-          <img src="http://placehold.it/1440x400/999999/cccccc">
-           <div class="carousel-caption">
-            <h3>Headline</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-          </div>
-        </div><!-- End Item -->
-        
-        <div class="item">
-          <img src="http://placehold.it/1440x400/dddddd/333333">
-           <div class="carousel-caption">
-            <h3>Headline</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
-          </div>
-        </div><!-- End Item -->
-        
-        <div class="item">
-          <img src="http://placehold.it/1440x400/999999/cccccc">
-           <div class="carousel-caption">
-            <h3>Headline</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-          </div>
-        </div><!-- End Item -->
-                
-      </div><!-- End Carousel Inner -->
-
-
-        <ul class="nav nav-pills nav-justified">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"><a href="#">Staff<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="1"><a href="#">Placement<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="2"><a href="#">Industry<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="3"><a href="#">Facilities<small>Lorem ipsum dolor sit</small></a></li>
-        </ul>
-
-
-    </div><!-- End Carousel -->
 </div>
+
 <section class="footer">
     <div class="container">
         <div class="row">
@@ -210,23 +133,18 @@ $(document).ready(function() {
             </div>
             <div class="col-lg-3  col-md-3 col-sm-3">
                 <div class="footer_dv">
-                    <h3>Services</h3>
-                    <ul>
-                        <li class="line_rv"><a href="canon-printer-support.php">Canon Printer Support</a></li>
-                        <li><a href="hp-printer-support.php">Hp printer Support</a></li>
-                        <li><a href="dell-printer-support.php">Dell Printer Support</a></li>
-                        <li><a href="epson-printer-support.php">Epson printer Support</a></li>
-                        <li><a href="samsung-printer-support.php">Samsung Printer Support</a></li>
-                        <li><a href="lexmark-printer-support.php">Lexmark Printer Support</a></li>
-                    </ul>
+                    <h3>Created By</h3>
+                    <p class="body"> George W Langham (21037178) &amp; Bethany Tibbles-Hammond </p>
+                    <p class="body">For Effective Design and Development, Group Assignment</p>
                 </div>
             </div>
+   
+        </div>
             <div class="row">
                 <div class="col-md-12">
                 <div class="alert alert-dismissable alert-info"><button aria-hidden="true" class="close" data-dismiss="alert" type="button">×</button>Created By George Langham &amp; Bethany Tibbles-Hammond</div>
                 </div>
             </div>
-        </div>
     </div>
 </section>
 </body>
