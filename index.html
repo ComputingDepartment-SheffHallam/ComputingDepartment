@@ -29,8 +29,8 @@
 $(document).ready(function() {
     $(".btn-pref .btn").click(function () {
         $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
-        // $(".tab").addClass("active"); // instead of this do the below 
-        $(this).removeClass("btn-default").addClass("btn-primary");   
+        // $(".tab").addClass("active"); // instead of this do the below
+        $(this).removeClass("btn-default").addClass("btn-primary");
     });
 });
 </script>
@@ -39,12 +39,12 @@ $(document).ready(function() {
         $('#myCarousel').carousel({
             interval:   4000
         });
-        
+
         var clickEvent = false;
         $('#myCarousel').on('click', '.nav a', function() {
                 clickEvent = true;
                 $('.nav li').removeClass('active');
-                $(this).parent().addClass('active');        
+                $(this).parent().addClass('active');
         }).on('slid.bs.carousel', function(e) {
             if(!clickEvent) {
                 var count = $('.nav').children().length -1;
@@ -52,7 +52,7 @@ $(document).ready(function() {
                 current.removeClass('active').next().addClass('active');
                 var id = parseInt(current.data('slide-to'));
                 if(count == id) {
-                    $('.nav li').first().addClass('active');    
+                    $('.nav li').first().addClass('active');
                 }
             }
             clickEvent = false;
@@ -83,13 +83,16 @@ $(document).ready(function() {
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">Staff</a>
-                    </li><li>
-                        <a href="#">Placement</a>
-                    </li><li>
-                        <a href="#">Industry</a>
-                    </li><li>
-                        <a href="#">Facilities</a>
+                        <a href="staff.html">Staff</a>
+                    </li>
+                    <li>
+                        <a href="placement.html">Placement</a>
+                    </li>
+                    <li>
+                        <a href="industry.html">Industry</a>
+                    </li>
+                    <li>
+                        <a href="facilities.html">Facilities</a>
                     </li>
                 </ul>
             </div>
@@ -114,34 +117,34 @@ $(document).ready(function() {
         <!-- Slider Row -->
    <div class="row">
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    
+
       <!-- Wrapper for slides -->
       <div class="carousel-inner">
-      
+
         <div class="item active">
           <img src="http://placehold.it/1440x400/cccccc/ffffff">
            <div class="carousel-caption">
-            <h3>Headline</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+            <h3>Our Staff</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
           </div>
         </div><!-- End Item -->
- 
+
          <div class="item">
           <img src="http://placehold.it/1440x400/999999/cccccc">
            <div class="carousel-caption">
-            <h3>Headline</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+            <h3>Placement Support</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
           </div>
         </div><!-- End Item -->
-        
+
         <div class="item">
           <img src="http://placehold.it/1440x400/dddddd/333333">
            <div class="carousel-caption">
-            <h3>Headline</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. <a href="http://sevenx.de/demo/bootstrap-carousel/" target="_blank" class="label label-danger">Bootstrap 3 - Carousel Collection</a></p>
+            <h3>Industry Links</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
           </div>
         </div><!-- End Item -->
-        
+
         <div class="item">
           <img src="http://placehold.it/1440x400/999999/cccccc">
            <div class="carousel-caption">
@@ -149,7 +152,7 @@ $(document).ready(function() {
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
           </div>
         </div><!-- End Item -->
-                
+
       </div><!-- End Carousel Inner -->
 
 
@@ -171,7 +174,7 @@ $(document).ready(function() {
                     <h3>Services</h3>
                     <ul>
                         <li class="line_rv"><a href="canon-printer-support.php">Canon Printer Support</a></li>
-               
+
                         <li><a href="hp-printer-support.php">Hp printer Support</a></li>
                         <li><a href="dell-printer-support.php">Dell Printer Support</a></li>
                         <li><a href="epson-printer-support.php">Epson printer Support</a></li>
@@ -185,7 +188,7 @@ $(document).ready(function() {
                     <h3>Services</h3>
                     <ul>
                         <li class="line_rv"><a href="canon-printer-support.php">Canon Printer Support</a></li>
-               
+
                         <li><a href="hp-printer-support.php">Hp printer Support</a></li>
                         <li><a href="dell-printer-support.php">Dell Printer Support</a></li>
                         <li><a href="epson-printer-support.php">Epson printer Support</a></li>
@@ -199,7 +202,7 @@ $(document).ready(function() {
                     <h3>Services</h3>
                     <ul>
                         <li class="line_rv"><a href="canon-printer-support.php">Canon Printer Support</a></li>
-               
+
                         <li><a href="hp-printer-support.php">Hp printer Support</a></li>
                         <li><a href="dell-printer-support.php">Dell Printer Support</a></li>
                         <li><a href="epson-printer-support.php">Epson printer Support</a></li>
@@ -221,11 +224,11 @@ $(document).ready(function() {
                     </ul>
                 </div>
             </div>
-            <div class="row">
+        </div>
+        <div class="row">
                 <div class="col-md-12">
-                <div class="alert alert-dismissable alert-info"><button aria-hidden="true" class="close" data-dismiss="alert" type="button">×</button>Created By George Langham &amp; Bethany Tibbles-Hammond</div>
-                </div>
-            </div>
+                   <p class="label-info">Created By George Langham &amp; Bethany Tibbles-Hammond</p>
+               </div>
         </div>
     </div>
 </section>
