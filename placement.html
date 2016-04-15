@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
     <meta charset="utf-8">
@@ -9,13 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Comp-Dept | Index</title>
+    <title>Shu Computing | Placement Support</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link href="css/round-about.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/card.css">
     <link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -34,38 +33,9 @@ $(document).ready(function() {
     });
 });
 </script>
-<script type="text/javascript">
-    $(document).ready( function() {
-        $('#myCarousel').carousel({
-            interval:   4000
-        });
-
-        var clickEvent = false;
-        $('#myCarousel').on('click', '.nav a', function() {
-                clickEvent = true;
-                $('.nav li').removeClass('active');
-                $(this).parent().addClass('active');
-        }).on('slid.bs.carousel', function(e) {
-            if(!clickEvent) {
-                var count = $('.nav').children().length -1;
-                var current = $('.nav li.active');
-                current.removeClass('active').next().addClass('active');
-                var id = parseInt(current.data('slide-to'));
-                if(count == id) {
-                    $('.nav li').first().addClass('active');
-                }
-            }
-            clickEvent = false;
-        });
-    });
-</script>
-<script src="js/bootstrap.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/npm.js"></script>
-<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
 </head>
-<body>
 
+<body>
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -84,15 +54,12 @@ $(document).ready(function() {
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="staff.html">Staff</a>
-                    </li>
-                    <li>
-                        <a href="placement.html">Placement</a>
-                    </li>
-                    <li>
-                        <a href="industry.html">Industry</a>
-                    </li>
-                    <li>
-                        <a href="facilities.html">Facilities</a>
+                    </li><li>
+                        <a href="#">Placement</a>
+                    </li><li>
+                        <a href="#">Industry</a>
+                    </li><li>
+                        <a href="#">Facilities</a>
                     </li>
                 </ul>
             </div>
@@ -103,67 +70,90 @@ $(document).ready(function() {
 
     <!-- Page Content -->
     <div class="container">
-
         <!-- Introduction Row -->
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">About Us
-                    <small>It's Nice to Meet You!</small>
+                <h1 class="page-header">Placements
+                    <small>Let's help you find that placement!</small>
                 </h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
             </div>
         </div>
-        <!-- Slider Row -->
-   <div class="row">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    </div>
+    <div class="container">
+        <div class="row">
+            <!-- Slider Row -->
+       <div class="row">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
-      <!-- Wrapper for slides -->
-      <div class="carousel-inner">
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
 
-        <div class="item active">
-          <img src="http://placehold.it/1440x400/cccccc/ffffff">
-           <div class="carousel-caption">
-            <h3>Our Staff</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-          </div>
-        </div><!-- End Item -->
+            <div class="item active">
+              <img src="http://placehold.it/1440x400/cccccc/ffffff">
+               <div class="carousel-caption">
+                <h3>Our Staff</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div><!-- End Item -->
 
-         <div class="item">
-          <img src="http://placehold.it/1440x400/999999/cccccc">
-           <div class="carousel-caption">
-            <h3>Placement Support</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-          </div>
-        </div><!-- End Item -->
+             <div class="item">
+              <img src="http://placehold.it/1440x400/999999/cccccc">
+               <div class="carousel-caption">
+                <h3>Placement Support</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div><!-- End Item -->
 
-        <div class="item">
-          <img src="http://placehold.it/1440x400/dddddd/333333">
-           <div class="carousel-caption">
-            <h3>Industry Links</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-          </div>
-        </div><!-- End Item -->
+            <div class="item">
+              <img src="http://placehold.it/1440x400/dddddd/333333">
+               <div class="carousel-caption">
+                <h3>Industry Links</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div><!-- End Item -->
 
-        <div class="item">
-          <img src="http://placehold.it/1440x400/999999/cccccc">
-           <div class="carousel-caption">
-            <h3>Headline</h3>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
-          </div>
-        </div><!-- End Item -->
+            <div class="item">
+              <img src="http://placehold.it/1440x400/999999/cccccc">
+               <div class="carousel-caption">
+                <h3>Headline</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+              </div>
+            </div><!-- End Item -->
 
-      </div><!-- End Carousel Inner -->
-
-
-        <ul class="nav nav-pills nav-justified">
-          <li data-target="#myCarousel" data-slide-to="0"><a href="staff.html">Staff<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="1"><a href="placement.html">Placement<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="2"><a href="industry.html">Industry<small>Lorem ipsum dolor sit</small></a></li>
-          <li data-target="#myCarousel" data-slide-to="3"><a href="facilities.html">Facilities<small>Lorem ipsum dolor sit</small></a></li>
-        </ul>
+          </div><!-- End Carousel Inner -->
 
 
-    </div><!-- End Carousel -->
+            <ul class="nav nav-pills nav-justified">
+              <li data-target="#myCarousel" data-slide-to="0"><a href="staff.html">Staff</a></li>
+              <li data-target="#myCarousel" data-slide-to="1" class="active"><a href="placement.html">Placement</a></li>
+              <li data-target="#myCarousel" data-slide-to="2"><a href="industry.html">Industry</a></li>
+              <li data-target="#myCarousel" data-slide-to="3"><a href="facilities.html">Facilities</a></li>
+            </ul>
+
+
+        </div><!-- End Carousel -->
+        <div class="row">
+            <div class="col-sm-4">
+                <h3>
+                    Some Stuff about magic
+                </h3>
+<p>Do adipisicing ipsum eiusmod nisi aute sint excepteur ad non quis eu excepteur eu duis. Consectetur enim enim occaecat sint incididunt consequat nisi Lorem dolor amet est veniam et anim. Cupidatat cillum proident dolor quis quis Lorem irure laboris ut quis deserunt. Nisi veniam dolore dolore velit dolore ex laboris excepteur tempor sit mollit labore culpa magna labore fugiat.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>
+                    Some Stuff about our links
+                </h3>
+<p>Dolor officia incididunt dolore nisi et nulla aliqua laboris incididunt consequat. Nulla excepteur fugiat anim nisi officia ex sint reprehenderit velit sunt irure nisi. Dolore minim incididunt non mollit adipisicing commodo id mollit ullamco elit qui dolor velit cillum culpa. Qui Lorem excepteur reprehenderit cillum et elit consequat laboris Lorem ut fugiat consequat laborum. Veniam est esse dolor ea et consectetur sunt ex ut quis aute. Aliqua veniam pariatur aute culpa sit laboris irure sit excepteur eiusmod adipisicing id.</p>
+            </div>
+            <div class="col-sm-4">
+                <h3>
+                    Some stuff about our support
+                </h3>
+                    <p>Sit anim veniam sunt nisi elit fugiat anim sint incididunt elit fugiat. Culpa anim eu sunt id reprehenderit aliqua eu eu esse excepteur et ex ullamco. Aute labore reprehenderit consequat incididunt nisi adipisicing quis. Excepteur ex quis cupidatat dolore mollit duis eu in magna veniam labore non. Pariatur consequat do ipsum elit proident fugiat culpa laboris. Culpa magna qui consectetur laboris excepteur pariatur consectetur est eu sint est nulla occaecat. Laborum minim dolor fugiat adipisicing cupidatat minim eu sunt. Mollit voluptate</p>
+            </div>
+        </div>
+    </div>
 </div>
 </div>
 <section class="footer">
@@ -185,7 +175,7 @@ $(document).ready(function() {
             </div>
             <div class="col-lg-3  col-md-3 col-sm-3">
                 <div class="footer_dv">
-                    <h3>Services</h3>
+                    <h4>Services</h4>
                     <ul>
                         <li class="line_rv"><a href="canon-printer-support.php">Canon Printer Support</a></li>
 
@@ -199,7 +189,7 @@ $(document).ready(function() {
             </div>
             <div class="col-lg-3  col-md-3 col-sm-3">
                 <div class="footer_dv">
-                    <h3>Services</h3>
+                    <h4>Services</h4>
                     <ul>
                         <li class="line_rv"><a href="canon-printer-support.php">Canon Printer Support</a></li>
 
@@ -213,9 +203,10 @@ $(document).ready(function() {
             </div>
             <div class="col-lg-3  col-md-3 col-sm-3">
                 <div class="footer_dv">
-                    <h3>Services</h3>
+                    <h4>Services</h4>
                     <ul>
                         <li class="line_rv"><a href="canon-printer-support.php">Canon Printer Support</a></li>
+
                         <li><a href="hp-printer-support.php">Hp printer Support</a></li>
                         <li><a href="dell-printer-support.php">Dell Printer Support</a></li>
                         <li><a href="epson-printer-support.php">Epson printer Support</a></li>
@@ -224,11 +215,7 @@ $(document).ready(function() {
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="row">
-                <div class="col-md-12">
-                   <p class="label-info">Created By George Langham &amp; Bethany Tibbles-Hammond</p>
-               </div>
+
         </div>
     </div>
 </section>
