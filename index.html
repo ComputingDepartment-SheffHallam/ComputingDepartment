@@ -1,7 +1,252 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html>
 <body>
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
+=======
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Comp-Dept | Index</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+    <link href="css/round-about.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/card.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/npm.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<script type="text/javascript">
+$(document).ready(function() {
+    $(".btn-pref .btn").click(function () {
+        $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+        // $(".tab").addClass("active"); // instead of this do the below
+        $(this).removeClass("btn-default").addClass("btn-primary");
+    });
+});
+</script>
+<script type="text/javascript">
+    $(document).ready( function() {
+        $('#myCarousel').carousel({
+            interval:   4000
+        });
+
+        var clickEvent = false;
+        $('#myCarousel').on('click', '.nav a', function() {
+                clickEvent = true;
+                $('.nav li').removeClass('active');
+                $(this).parent().addClass('active');
+        }).on('slid.bs.carousel', function(e) {
+            if(!clickEvent) {
+                var count = $('.nav').children().length -1;
+                var current = $('.nav li.active');
+                current.removeClass('active').next().addClass('active');
+                var id = parseInt(current.data('slide-to'));
+                if(count == id) {
+                    $('.nav li').first().addClass('active');
+                }
+            }
+            clickEvent = false;
+        });
+    });
+</script>
+
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html" alt="Home Page" title="Home Page">Sheffield Hallam University</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="staff.html">Staff</a>
+                    </li>
+                    <li>
+                        <a href="placement.html">Placement</a>
+                    </li>
+                    <li>
+                        <a href="industry.html">Industry</a>
+                    </li>
+                    <li>
+                        <a href="facilities.html">Facilities</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+        <!-- Slider Row -->
+   <div class="row">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="http://placehold.it/1440x400/cccccc/ffffff">
+           <div class="carousel-caption">
+            <h3>Our Staff</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          </div>
+        </div><!-- End Item -->
+
+         <div class="item">
+          <img src="http://placehold.it/1440x400/999999/cccccc">
+           <div class="carousel-caption">
+            <h3>Placement Support</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          </div>
+        </div><!-- End Item -->
+
+        <div class="item">
+          <img src="http://placehold.it/1440x400/dddddd/333333">
+           <div class="carousel-caption">
+            <h3>Industry Links</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          </div>
+        </div><!-- End Item -->
+
+        <div class="item">
+          <img src="http://placehold.it/1440x400/999999/cccccc">
+           <div class="carousel-caption">
+            <h3>Headline</h3>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          </div>
+        </div><!-- End Item -->
+
+      </div><!-- End Carousel Inner -->
+
+
+        <ul class="nav nav-pills nav-justified">
+          <li data-target="#myCarousel" data-slide-to="0"><a href="staff.html">Staff<small>Lorem ipsum dolor sit</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="1"><a href="placement.html">Placement<small>Lorem ipsum dolor sit</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="2"><a href="industry.html">Industry<small>Lorem ipsum dolor sit</small></a></li>
+          <li data-target="#myCarousel" data-slide-to="3"><a href="facilities.html">Facilities<small>Lorem ipsum dolor sit</small></a></li>
+        </ul>
+
+
+    </div><!-- End Carousel -->
+    <!-- Introduction Row -->
+    <div class="row">
+        <div class="col-sm-12">
+            <h1 class="page-header">About Us
+                <small>It's Nice to Meet You!</small>
+            </h1>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, explicabo dolores ipsam aliquam inventore corrupti eveniet quisquam quod totam laudantium repudiandae obcaecati ea consectetur debitis velit facere nisi expedita vel?</p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <h1>Section 1 Description</h1>
+        <p>Ad et velit velit labore consectetur consequat ex nisi dolore id nulla eu adipisicing aliqua nostrud. Consectetur voluptate excepteur laborum id magna qui dolor dolor dolore enim ipsum enim officia. Occaecat enim fugiat reprehenderit excepteur cillum ex ea enim.</p>
+      </div>
+      <div class="col-sm-3">
+          <h1>Section 1 Description</h1>
+          <p>Dolore exercitation esse proident velit non anim aliqua reprehenderit proident cupidatat aute. Ea Lorem aliquip velit id nostrud veniam ex ex eu enim cillum dolor est. Voluptate minim voluptate consequat enim officia tempor amet dolore eu cupidatat ipsum in quis nisi consectetur adipisicing. Laboris consectetur qui voluptate cupidatat culpa est sunt Lorem labore quis aute reprehenderit elit. Voluptate ad culpa voluptate dolor ea nisi nisi culpa occaecat amet excepteur mollit voluptate. Aute enim nulla labore aliqua duis amet consectetur officia aliqua adipisicing consectetur minim. Irure deserunt pariatur labore sit minim aute esse labore.</p>
+      </div>
+      <div class="col-sm-3">
+            <h1>Section 1 Description</h1>
+            <p>Incididunt ut elit veniam amet nostrud et ullamco sit voluptate quis. Dolor sit adipisicing incididunt ipsum sunt quis eu id consequat sint dolor reprehenderit aliquip mollit culpa Lorem. Anim ex aute commodo sint labore id culpa adipisicing cupidatat magna laboris do aute commodo aute. Qui deserunt eu sit consectetur esse et ipsum incididunt. Reprehenderit labore mollit sint excepteur excepteur eu occaecat eiusmod qui. Adipisicing nisi mollit tempor ullamco eiusmod anim aliquip minim veniam aute aute nostrud labore. Reprehenderit et voluptate duis non consectetur culpa magna ad laboris.</p>
+      </div>
+      <div class="col-sm-3">
+            <h1>Section 1 Description</h1>
+            <p>Est id elit non nostrud fugiat quis nisi minim aute cillum in officia anim consectetur labore sunt eiusmod. Proident consectetur ea minim velit occaecat pariatur elit. Pariatur proident dolore id irure quis irure incididunt elit est do nisi culpa. Dolore in eiusmod sit exercitation dolore irure tempor adipisicing nisi dolore.</p>
+      </div>
+      <div class="col-sm-12">
+        <img class="carousel-inner" src="http://placehold.it/1440x300/">
+      </div>
+    </div>
+</div>
+</div>
+<section class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <div class="footer_dv">
+                    <h3><a href="staff.html">Staff</a></h3>
+                    <ul>
+                        <li><a href="staff.html#welcome">Welcome</a></li>
+                        <li><a href="staff.html#staff">Our Staff</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer_dv">
+                    <h3><a href="placement.html">Placement</a></h3>
+                    <ul>
+                        <li><a href="placement.html#about">About</a></li>
+                        <li><a href="placement.html#benefits">Benefits</a></li>
+                        <li><a href="placement.html#experiences">Student Experiences</a></li>
+                        <li><a href="placement.html#companies">Placement Companies</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer_dv">
+                    <h3><a href="industry.html">Industry</a></h3>
+                    <ul>
+                        <li><a href="industry.html#welcome">Welcome</a></li>
+                        <li><a href="industry.html#industries">Industrial Links</a></li>
+                        <li><a href="industry.html#more">To Find Out More</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="footer_dv">
+                    <h3><a href="facilities.html">Facilities</a></h3>
+                    <ul>
+                        <li><a href="facilities.html#facilities">Our Facilities</a></li>
+                        <li><a href="facilities.html#networking">Networking</a></li>
+                        <li><a href="facilities.html#games">Computer Games</a></li>
+                        <li><a href="facilities.html#multimedia">Multimedia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <p>
+                    <small>&copy; George Langham <a href="http://georgelangham.net"><span class="fa fa-external-link"></span></a> &amp; Bethany Tibbles-Hammond. <br />
+                        Images and code sourced from <a href="https://creativecommons.org/publicdomain/zero/1.0/"><span class="fa fa-creative-commons"></span>CC0</a> and <a href="https://tldrlegal.com/license/mit-license">MIT</a> licensed sources apart from when otherwise stated. Full details in Documentation.</small>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+>>>>>>> refs/remotes/origin/development
 </body>
 </html>

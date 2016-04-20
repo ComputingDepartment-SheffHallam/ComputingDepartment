@@ -1,0 +1,15 @@
+.logo-img {
+	padding:5px 15px;
+}
+.logo-img > img {
+	    height: 58px;
+}
+.logo-text {
+	display:none;
+}
+.fixed .logo-text {
+	display:block;
+}
+.fixed .logo-img {
+	display:none;
+}
