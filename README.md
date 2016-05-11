@@ -6,3 +6,5 @@ At this point in time the development is as far as we want to take it for this p
 At a later point we may come back and fix bugs and add features.
 
 But currently the prototype shall remain closed as it is.
+
+@beth1991 did a large amount of the edits using my github user as she still hasn't got the hang of github.
