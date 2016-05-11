@@ -7,4 +7,4 @@ At a later point we may come back and fix bugs and add features.
 
 But currently the prototype shall remain closed as it is.
 
-@beth1991 did a large amount of the edits using my github user as she still hasn't got the hang of github.
+@beth1991 (https://github.com/beth1991) did a large amount of the edits using my github user as she still hasn't got the hang of github.
